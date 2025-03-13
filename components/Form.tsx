@@ -60,8 +60,11 @@ export default function Form() {
           </View>
         )}
       </Formik>
+      <View style={styles.Container}>
       <View><Text>Email : {email}</Text></View>
       <View><Text>Password : {password}</Text></View>
+      </View>
+      
     </View>
   );
 }
@@ -85,6 +88,9 @@ const styles=StyleSheet.create({
         color:"red",
     },
     Button:{
+        margin:15,
+    },
+    Container:{
         margin:15,
     }
 })
